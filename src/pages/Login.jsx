@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 //css
-import "../css/Login.css"
+import "../CSS/Login.css"
 
-const Login = ({ onLogin }) => {
+const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [, setUserType] = useState(null);
   const navigate = useNavigate();
+
+  const onLogin = (type) => {
+    setUserType(type);
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
