@@ -1,0 +1,129 @@
+
+
+.item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 20px;
+    color: #070707;
+    font-weight: bold;
+  }
+  
+  .card {
+    position: relative;
+    margin: 16%;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    /* background: rgba(255, 255, 255, 0.1); */
+    background-color: card;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: transform 0.5s;
+    background-color: white;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 90%; /* This will make the image take the full width of the card */
+    height: 250px; /* Adjust this value as needed */
+    object-fit: cover; /* This will scale the image to cover the space without distorting its aspect ratio */
+  }
+  
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  .card-text {
+    margin-bottom: 20px;
+  }
+  
+  .check-btn {
+    display: inline-block;
+    font-size: 1em;
+    color: #fff;
+    background-color: #608F91;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.check-btn:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+
+  .card-grid {
+    background-image: #608F91;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #608F91;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  

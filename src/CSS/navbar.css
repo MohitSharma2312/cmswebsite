@@ -1,0 +1,67 @@
+/* Navbar styles */
+.navbar {
+    display: fixed;
+    width: 100%;
+    
+    height: 8%;
+    background-color: #7d0061;
+    transition: background-color 0.3s ease;
+    
+    border-radius: 10px; /* Add this to round the ends of the navbar */
+  }
+  
+  .navbar.scrolled {
+    
+  }
+  .profile-pic {
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 100%;
+    list-style: none;
+  }
+  .navbar-item:first-child{
+    color: black;
+    margin-right: 38%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+
+    justify-content: right;
+  }
+  .navbar-item:last-child{
+    margin-left: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: left;
+  }
+  .navbar-item {
+    margin: 8px;
+    justify-content: center;
+  }
+
+  .navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar-item:hover {
+    animation: zoomIn 0.2s ease-in-out forwards;
+    transform: scale(1.5); /* Add this to make the links pop out */
+  }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.5); /* Adjust the scale factor for desired zoom level */
+    }
+  }
+  

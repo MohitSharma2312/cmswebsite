@@ -1,0 +1,189 @@
+#root {
+  max-width: 100%;
+  text-align: center;
+  animation: root-fade-in 2s ease-in-out;
+}
+
+@keyframes root-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  animation: logo-spin infinite 20s linear;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: profile-pic-pulse 2s infinite;
+}
+
+@keyframes profile-pic-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  padding: 2em;
+  animation: card-slide-in 2s ease-in-out;
+}
+
+@keyframes card-slide-in {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+  animation: read-the-docs-blink 1s infinite;
+}
+
+@keyframes read-the-docs-blink {
+  0%, 100% {
+    color: #888;
+  }
+  50% {
+    color: #444;
+  }
+}
+
+#root {
+  max-width: 100%;
+  text-align: center;
+  animation: root-fade-in 2s ease-in-out;
+  position: relative; /* Add this to position the Navbar */
+}
+@keyframes root-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Navbar {
+  position: fixed; /* Make the Navbar fixed */
+  top: 0; /* Position the Navbar at the top */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Make sure the Navbar is always on top */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  animation: logo-spin infinite 20s linear;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: profile-pic-pulse 2s infinite;
+}
+
+
+@keyframes profile-pic-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  animation: card-slide-in 2s ease-in-out;
+}
+@keyframes card-slide-in {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+@keyframes read-the-docs-blink {
+  0%, 100% {
+    color: #888;
+  }
+  50% {
+    color: #444;
+  }
+}
